@@ -16,7 +16,7 @@ public class Jugador {
         this.y = alturaPanel / 2 - alturaPaleta / 2;
     }
 
-    public int getY() {
+    public int posY() {
         return y;
     }
 
