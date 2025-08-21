@@ -104,9 +104,9 @@ public class PanelJuego extends JPanel implements ActionListener, KeyListener {
         g.drawString(String.valueOf(puntajeIzquierda), anchoPanel / 4, 80);
         g.drawString(String.valueOf(puntajeDerecha), anchoPanel * 3 / 4, 80);
 
-        g.setColor(new Color(79, 0, 79));
+        g.setColor(new Color(130, 7, 219));
         g.fillRect(paletaXIzquierda, jugadorIzquierda.getY(), 10, alturaPaleta);
-        g.setColor(new Color(79, 0, 79));
+        g.setColor(new Color(130, 7, 219));
         g.fillRect(paletaXDerecha, jugadorDerecha.getY(), 10, alturaPaleta);
 
         g.setColor(new Color (255, 255, 255));
@@ -144,7 +144,7 @@ public class PanelJuego extends JPanel implements ActionListener, KeyListener {
             bolaX += bolaDX;
             bolaY += bolaDY;
 
-            if (bolaY <= 0 || bolaY >= alturaPanel - bolaRadio) {
+            if (bolaY <= 0 || bolaY >= alturaPanel - 30) {
                 bolaDY = -bolaDY;
             }
 
