@@ -80,7 +80,7 @@ public class PanelJuego extends JPanel implements ActionListener, KeyListener {
     }
 
     private void iniciarPelota() {
-        double velocidadInicial = 4;
+        double velocidadInicial = 5;
         bolaDX = pelotaSaleHaciaIzquierda ? -velocidadInicial : velocidadInicial;
         bolaDY = random.nextBoolean() ? velocidadInicial : -velocidadInicial;
         jugando = true;
@@ -114,7 +114,7 @@ public class PanelJuego extends JPanel implements ActionListener, KeyListener {
         
         Graphics2D g2d = (Graphics2D) g.create();
         g2d.setFont(fuenteArcade);  
-        g2d.setColor(new Color(200, 200, 200));         
+        g2d.setColor(new Color(150, 150, 150));         
         FontMetrics fm = g2d.getFontMetrics();
         String logo = "P O N G";
         int logoX = (anchoPanel - fm.stringWidth(logo)) / 2;
