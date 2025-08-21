@@ -144,7 +144,7 @@ public class PanelJuego extends JPanel implements ActionListener, KeyListener {
             bolaX += bolaDX;
             bolaY += bolaDY;
 
-            if (bolaY <= 0 || bolaY >= alturaPanel - 30) {
+            if (bolaY <= 0 || bolaY >= alturaPanel - 40) {
                 bolaDY = -bolaDY;
             }
 
